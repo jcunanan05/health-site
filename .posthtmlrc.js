@@ -1,11 +1,11 @@
-const root = __dirname + '/src/pages';
+const root = __dirname + '/src';
 
 const posthtmlConfig = {
   plugins: {
-    'posthtml-include': {
+    'posthtml-extend': {
       root
     },
-    'posthtml-extend': {
+    'posthtml-include': {
       root
     }
   }
