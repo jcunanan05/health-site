@@ -1,0 +1,10 @@
+{
+  "name": "health-website-client",
+  "version": "0.0.1",
+  "description": "This site will be an information page that can let the users book their appointment.",
+  "main": "index.js",
+  "repository": "git@github.com:jcunanan05/health-site.git",
+  "author": "Jonathan Cunanan <j_cunanan05@yahoo.com>",
+  "license": "MIT",
+  "private": true
+}
