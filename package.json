@@ -6,5 +6,9 @@
   "repository": "git@github.com:jcunanan05/health-site.git",
   "author": "Jonathan Cunanan <j_cunanan05@yahoo.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "posthtml-include": "^1.2.0"
+  }
 }
