@@ -1,0 +1,21 @@
+.BurgerButton {
+  border: none;
+  background: none;
+  width: 3.5rem;
+  font-size: 1.15rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.BurgerButton:hover {
+  background-color: rgba(160, 160, 160, 0.37);
+}
+
+// navbar burger button CSS
+nav {
+  @media (min-width: $desktop) {
+    .BurgerButton {
+      display: none;
+    }
+  }
+}
