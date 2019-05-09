@@ -18,6 +18,7 @@
     "sass": "^1.20.1"
   },
   "dependencies": {
-    "bulma": "^0.7.4"
+    "bulma": "^0.7.4",
+    "pubsub-js": "^1.7.0"
   }
 }
