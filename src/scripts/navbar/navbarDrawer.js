@@ -26,7 +26,6 @@ function navbarDrawer(
 
 /**
  *
- * @param {Event} event
  * @param {string} [navbarDrawerSelector] - selector for navbarDrawer
  * @param {string} isOpen - is open class for drawer.
  */
@@ -41,7 +40,6 @@ function openNavbarDrawer(
 
 /**
  *
- * @param {Event} event
  * @param {string} [navbarDrawerSelector] - selector for navbarDrawer
  * @param {string} isOpen - is open class for drawer.
  */
@@ -68,7 +66,7 @@ function onNavbarDrawerClose(func) {
  */
 
 function emitNavbarDrawerOnClose(data = null) {
-  PubSub.publish(ON_NAVBAR_DRAWER_CLOSE, null);
+  PubSub.publish(ON_NAVBAR_DRAWER_CLOSE, data);
 }
 
 export { ON_NAVBAR_DRAWER_CLOSE };
