@@ -1,6 +1,15 @@
+// for retina screens
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .IndexPage {
+    .content {
+      font-size: 1.1rem;
+    }
+  }
+}
+
 .IndexPage {
   // grey out every odd element section
-  .section + .section {
+  .section:nth-child(2n + 1) {
     background-color: #efefef;
   }
 
@@ -17,6 +26,7 @@
     .title {
       color: $white;
       font-weight: 300;
+      font-size: 3rem;
     }
 
     .subtitle {
@@ -37,16 +47,19 @@
     }
 
     .ImageSection {
-      padding: 2rem;
-      border-radius: 5px;
-      background-color: $primary;
-      text-align: center;
-      &.Icon {
+      display: flex;
+      flex-direction: column;
+      .Icon {
+        flex: 1;
         display: flex;
+        padding: 2rem;
         align-items: center;
         justify-content: center;
-        color: $white;
+        border-radius: 5px;
+        background-color: $primary;
+        text-align: center;
         font-size: 10rem;
+        color: $white;
       }
     }
   }
