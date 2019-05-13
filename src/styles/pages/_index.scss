@@ -1,4 +1,9 @@
 .IndexPage {
+  // grey out every odd element section
+  .section + .section {
+    background-color: #efefef;
+  }
+
   .Banner {
     height: 30rem;
     padding-top: 10rem;
