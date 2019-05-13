@@ -26,3 +26,29 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
+// List inside NavbarDrawer's Paper
+.NavbarDrawer {
+  .Paper {
+    .List {
+      li {
+        display: flex;
+        a {
+          flex: 1;
+          padding: 0.5rem 1rem;
+        }
+      }
+      // grey on hover
+      li:hover {
+        background-color: #e7e7e7;
+      }
+      // gap of each list
+      li {
+        margin: 0.5rem 0;
+      }
+      li + li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
