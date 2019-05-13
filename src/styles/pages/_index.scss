@@ -1,5 +1,9 @@
 .IndexPage {
   .Banner {
     background-color: $primary;
+    background-image: url('../images/nature-blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
