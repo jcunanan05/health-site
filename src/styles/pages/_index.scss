@@ -4,6 +4,7 @@
     background-color: #efefef;
   }
 
+  //Banner section
   .Banner {
     height: 30rem;
     padding-top: 10rem;
@@ -25,6 +26,28 @@
     .title,
     .subtitle {
       text-shadow: 1px 1px black;
+    }
+  }
+
+  // WhySection
+  .WhySection {
+    .title {
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .ImageSection {
+      padding: 2rem;
+      border-radius: 5px;
+      background-color: $primary;
+      text-align: center;
+      &.Icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 10rem;
+      }
     }
   }
 }
