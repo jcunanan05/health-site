@@ -62,5 +62,10 @@
         color: $white;
       }
     }
+
+    // 2-column list
+    .content ul {
+      columns: 2;
+    }
   }
 }
