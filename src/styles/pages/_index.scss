@@ -13,6 +13,12 @@
     background-color: #efefef;
   }
 
+  // set h2 title setting for every section
+  h2.title {
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+
   //Banner section
   .Banner {
     height: 30rem;
@@ -39,13 +45,8 @@
     }
   }
 
-  // WhySection
-  .WhySection {
-    .title {
-      margin-bottom: 2rem;
-      font-weight: 400;
-    }
-
+  // BenefitsSection
+  .BenefitsSection {
     .ImageSection {
       display: flex;
       flex-direction: column;
@@ -63,9 +64,11 @@
       }
     }
 
-    // 2-column list
-    .content ul {
-      columns: 2;
+    // content list column on tablet and up
+    @media screen and (min-width: $tablet) {
+      .content ul {
+        columns: 2;
+      }
     }
   }
 }
