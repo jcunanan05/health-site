@@ -1,16 +1,20 @@
 import marked from '../libs/marked';
 
 const benefits = marked(`
-* High Cholesterol
-* Insomia
-* Stress
-* Constipation
-* Body Pain (Knee, Back, Menstrual)
-* Fatigue
-* Arthritis, Uric Acid
-* Detoxifies the body
+* Reduces high cholesterol, blood sugar
+* Insomia, enhances sleeping quality
+* Lessens stress, fatigue
+* Prevents constipation, improves digestion
+* Treats body pain (Knee, Back, Menstrual)
+* Strengthen body immunity
+* Treats arthritis, uric acid
+* Detoxifies the body (antioxidant)
 * No medicine
 * Improves students' concentration
+* Makes the skin smoother
+* Lightens the scar - good for people with sensitive skin
+* Revives libido for couples
+* Treatment like going to natural environments (sea, mountain-side)
 `);
 
 function renderBenefits() {
