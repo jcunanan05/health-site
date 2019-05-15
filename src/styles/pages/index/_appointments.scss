@@ -1,0 +1,36 @@
+.IndexPage {
+  .AppointmentsSection {
+    padding: 4rem 0;
+    background-color: $warning;
+
+    // change links color
+    & a {
+      color: #1565c0;
+    }
+
+    & a:hover {
+      color: $text;
+      text-decoration: underline;
+    }
+
+    // custom section styling to compensate for full-width embed
+    .section {
+      padding: 0 1.5rem;
+      background-color: $warning;
+    }
+
+    .content {
+      margin-bottom: 2rem;
+    }
+
+    .AppointmentEmbed {
+      background-color: $white;
+      min-height: 30rem;
+
+      & iframe {
+        height: 40rem;
+        width: 100%;
+      }
+    }
+  }
+}
