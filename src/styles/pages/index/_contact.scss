@@ -1,0 +1,12 @@
+.IndexPage {
+  .ContactSection {
+    @media screen and (min-width: $tablet) {
+      .title {
+        margin-right: 3rem;
+        font-size: 5rem;
+        font-weight: 300;
+        text-align: right;
+      }
+    }
+  }
+}
