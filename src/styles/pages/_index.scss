@@ -1,6 +1,7 @@
 // for retina screens
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .IndexPage {
+    font-size: 1.1rem;
     .content {
       font-size: 1.1rem;
     }
@@ -68,6 +69,37 @@
     @media screen and (min-width: $tablet) {
       .content ul {
         columns: 2;
+      }
+    }
+  }
+
+  // WhoSection
+  .WhoSection {
+    .PeopleList {
+      li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .Card {
+          flex: 1;
+          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1),
+            0 0 0 1px rgba(10, 10, 10, 0.1);
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .Icon {
+          padding: 1rem;
+          font-size: 2.5rem;
+          background-color: $primary;
+          color: $white;
+        }
+
+        .Text {
+          margin: 1rem;
+        }
       }
     }
   }
