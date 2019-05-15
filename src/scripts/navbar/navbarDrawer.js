@@ -1,4 +1,5 @@
 import PubSub from 'pubsub-js';
+import { stopEventBubblingAnd } from '../helpers/index';
 
 const ON_NAVBAR_DRAWER_CLOSE = 'onNavbarDrawerClose';
 
@@ -10,14 +11,26 @@ const ON_NAVBAR_DRAWER_CLOSE = 'onNavbarDrawerClose';
 
 function navbarDrawer(
   navbarDrawerSelector = '.js-NavbarDrawer',
-  navbarSpacerSelector = '.js-Spacer'
+  navbarSpacerSelector = '.js-Spacer',
+  closeIconSelector = '.js-CloseIcon'
 ) {
   const NavbarDrawer = document.querySelector(navbarDrawerSelector);
   const Spacer = NavbarDrawer.querySelector(navbarSpacerSelector);
+  const CloseIcon = NavbarDrawer.querySelector(closeIconSelector);
 
-  Spacer.addEventListener('click', () => {
-    emitNavbarDrawerOnClose();
-  });
+  Spacer.addEventListener(
+    'click',
+    stopEventBubblingAnd(() => {
+      emitNavbarDrawerOnClose();
+    })
+  );
+
+  CloseIcon.addEventListener(
+    'click',
+    stopEventBubblingAnd(() => {
+      emitNavbarDrawerOnClose();
+    })
+  );
 
   onNavbarDrawerClose(() => {
     closeNavbarDrawer();
