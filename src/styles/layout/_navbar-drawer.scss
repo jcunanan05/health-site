@@ -4,7 +4,7 @@
 
 // put navbar infront of anything
 .NavbarDrawer.is-open {
-  position: absolute;
+  position: fixed;
   display: flex;
   top: 0;
   left: 0;
@@ -48,6 +48,11 @@
       }
       li + li {
         margin-bottom: 0.5rem;
+      }
+
+      .CloseIcon {
+        text-align: center;
+        font-weight: 500;
       }
     }
   }
