@@ -1,0 +1,27 @@
+.IndexPage {
+  .BenefitsSection {
+    .ImageSection {
+      display: flex;
+      flex-direction: column;
+      .Icon {
+        flex: 1;
+        display: flex;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: $primary;
+        text-align: center;
+        font-size: 10rem;
+        color: $white;
+      }
+    }
+
+    // content list column on tablet and up
+    @media screen and (min-width: $tablet) {
+      .content ul {
+        columns: 2;
+      }
+    }
+  }
+}

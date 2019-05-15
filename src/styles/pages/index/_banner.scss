@@ -1,0 +1,26 @@
+.IndexPage {
+  .Banner {
+    height: 30rem;
+    padding-top: 10rem;
+    background-color: $primary;
+    background-image: url('../images/nature-blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .title {
+      color: $white;
+      font-weight: 300;
+      font-size: 3rem;
+    }
+
+    .subtitle {
+      color: $white;
+    }
+
+    .title,
+    .subtitle {
+      text-shadow: 1px 1px black;
+    }
+  }
+}
