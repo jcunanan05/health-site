@@ -1,11 +1,38 @@
 .IndexPage {
   .ContactSection {
     @media screen and (min-width: $tablet) {
+      .TitleColumn {
+        display: flex;
+        align-items: center;
+      }
       .title {
-        margin-right: 3rem;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 300;
-        text-align: right;
+        max-width: 20rem;
+        margin: 0 auto;
+      }
+    }
+    .ContactList {
+      margin-top: 1rem;
+      li + li {
+        margin-top: 1rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: flex;
+          align-items: center;
+        }
+
+        .Icon {
+          display: flex;
+          align-items: center;
+          margin-right: 1rem;
+          font-size: 1.5rem;
+        }
       }
     }
   }
